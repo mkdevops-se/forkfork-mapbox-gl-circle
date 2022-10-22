@@ -6,7 +6,7 @@ on:
       - Lint and Build
     types:
       - completed
-    branches: [issue-93-gh-actions]
+    branches: [master]
 
 jobs:
   publish-prerelease:
@@ -57,5 +57,5 @@ jobs:
       - name: Push Version Update
         uses: ad-m/github-push-action@master
         with:
-          branch: issue-93-gh-actions
+          branch: master
           github_token: ${{ secrets.GITHUB_TOKEN }}
