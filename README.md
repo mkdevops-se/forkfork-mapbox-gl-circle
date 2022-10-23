@@ -188,6 +188,10 @@ Returns **{sw: {lat: [number](https://developer.mozilla.org/docs/Web/JavaScript/
 
 ## Changelog
 
+### v. 1.8.1
+
+-   Improvements to GitHub Actions CI/CD ([#93](https://github.com/smithmicro/mapbox-gl-circle/issues/93))
+
 ### v. 1.6.6
 
 -   New CI/CD integration, replacing Jenkins with GitHub Actions ([#93](https://github.com/smithmicro/mapbox-gl-circle/issues/93))

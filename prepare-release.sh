@@ -11,6 +11,7 @@ fi
 echo "Current git version: $(npm version from-git)"
 
 NEXT_VERSION=$(npm version "$VERSION_CAT")
+NEXT_VERSION=${NEXT_VERSION/v/}  # Drop the "v" from "v1.8.0".
 echo "Next $VERSION_CAT version: $NEXT_VERSION"
 
 if [[ ! $VERSION_CAT =~ ^pre ]]; then
