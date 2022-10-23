@@ -11,7 +11,7 @@ on:
 jobs:
   publish-prerelease:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' && contains(github.event.repository.url, 'mblomdahl/mapbox-gl-circle') }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_repository.full_name == 'mblomdahl/mapbox-gl-circle' }}
     permissions:
       packages: write
       contents: write
