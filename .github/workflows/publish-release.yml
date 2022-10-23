@@ -7,7 +7,7 @@ on:
 jobs:
   publish-release:
     runs-on: ubuntu-latest
-    if: ${{ contains(github.event.repository.url, 'mblomdahl/mapbox-gl-circle') }}
+    if: ${{ contains(github.event.repository.url, 'smithmicro/mapbox-gl-circle') }}
     permissions:
       packages: write
       contents: write
